@@ -1,0 +1,31 @@
+.mainNav {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainNav ul {
+  display: flex;
+  align-items: center;
+}
+.mainNav ul li {
+  list-style: none;
+  display: block;
+}
+.mainNav ul li a {
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.1s;
+  border-bottom: 4px solid white;
+}
+.mainNav ul li a:hover {
+  border-bottom: 4px solid grey;
+}
+.mainNav ul li .active {
+  border-bottom: 4px solid grey;
+}

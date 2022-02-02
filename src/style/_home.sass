@@ -1,0 +1,27 @@
+#home
+    padding: 30px
+    h1
+        margin-bottom: 20px
+        text-align: center
+        color: $homeTextColor
+
+    section
+        display: flex
+        color: $homeTextColor
+
+div.foto, div.art
+    flex-basis: 50%
+    margin: 20px
+h2
+    margin-bottom: 10px
+    text-align: center
+p
+    font-size: 1.4em
+    text-align: justify
+    line-height: 1.3em
+div section:nth-child(odd) div.foto
+    order: 1
+
+@media ( max-width: 720px )
+    #home section
+        display: block

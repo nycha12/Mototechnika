@@ -1,0 +1,60 @@
+.mainNav
+    max-width: 1024px
+    height: 80px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    ul
+
+        display: flex
+        align-items: center
+        li
+            list-style: none
+            display: block
+
+            a
+                box-sizing: border-box
+                font-weight: 700
+                padding: 10px 20px 10px 20px
+                display: block
+                color: $navTextColor
+                text-transform: uppercase
+                text-decoration: none
+
+                transition: 0.1s
+                border-bottom: 4px solid white
+
+                &:hover
+                    border-bottom: 4px solid grey
+            .active
+
+                color: $navActiveTextColor
+    img
+        margin: 0 10px
+span.burgerActive
+    display: none
+
+@media ( max-width: 720px )
+    span.burgerActive
+        display: block
+        position: absolute
+        left: 80px
+        top: 30px
+        font-size: 30px
+        cursor: pointer
+        color: $navTextColor
+    .mainNav
+        position: relative
+        ul
+            position: absolute
+            display: block
+            top: 80px
+            left: -300px
+            background-color: white
+            border: 1px solid black
+            border-radius: 10px
+            overflow: hidden
+            transition: 0.3s
+        .active
+            left: 30px

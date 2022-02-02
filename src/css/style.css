@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+header {
+  background-color: grey;
+  height: 40vh;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.mainNav {
+  max-width: 1024px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainNav ul {
+  display: flex;
+  align-items: center;
+}
+.mainNav ul li {
+  list-style: none;
+  display: block;
+}
+.mainNav ul li a {
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  display: block;
+  color: #666;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.1s;
+  border-bottom: 4px solid white;
+}
+.mainNav ul li a:hover {
+  border-bottom: 4px solid grey;
+}
+.mainNav ul li .active {
+  color: black;
+}
+.mainNav img {
+  margin: 0 10px;
+}
+
+span.burgerActive {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  span.burgerActive {
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #666;
+  }
+
+  .mainNav {
+    position: relative;
+  }
+  .mainNav ul {
+    position: absolute;
+    display: block;
+    top: 80px;
+    left: -300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .mainNav .active {
+    left: 30px;
+  }
+}
+#home {
+  padding: 30px;
+}
+#home h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+#home section {
+  display: flex;
+  color: #333;
+}
+
+div.foto, div.art {
+  flex-basis: 50%;
+  margin: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4em;
+  text-align: justify;
+  line-height: 1.3em;
+}
+
+div section:nth-child(odd) div.foto {
+  order: 1;
+}
+
+@media (max-width: 720px) {
+  #home section {
+    display: block;
+  }
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.omnie {
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+p {
+  font-size: 1.4em;
+  text-align: justify;
+  line-height: 1.3em;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 20px;
+}
+footer h2 {
+  font-size: 0.7em;
+}
+footer div {
+  text-align: center;
+  font-size: 50px;
+}
+footer div span {
+  margin: 5px;
+  color: #444;
+}
+footer div span a {
+  color: #444;
+}
+footer div span a:hover {
+  color: #000;
+}
+footer p {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 720px) {
+  footer p {
+    width: 80%;
+  }
+}
+.rejestr {
+  max-width: 60%;
+  margin: 20px auto;
+}
+.rejestr p {
+  margin: 30px auto;
+}
+.rejestr table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+.rejestr table thead, .rejestr table tbody, .rejestr table th, .rejestr table td {
+  border: 1px solid black;
+}
+.rejestr table th {
+  border-width: 2px;
+}
+
+@media (max-width: 720px) {
+  .rejestr {
+    max-width: 80%;
+  }
+}
+.kontakt {
+  padding: 30px;
+}
+.kontakt h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.kontakt section {
+  display: flex;
+  justify-content: space-between;
+}
+.kontakt section iframe {
+  flex-basis: 50%;
+  min-height: 40vh;
+}
+.kontakt p {
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+@media (max-width: 720px) {
+  .kontakt section {
+    display: block;
+  }
+  .kontakt section iframe {
+    display: block;
+    min-width: 80%;
+    margin: 0 auto;
+  }
+}
+form {
+  width: 400px;
+}
+form label {
+  display: block;
+}
+form label input {
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  width: 80%;
+}
+form label textarea {
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  width: 80%;
+  min-height: 20vh;
+}
+form #mail {
+  display: inline;
+  width: 30%;
+  margin-left: 35px;
+}
+form button {
+  margin-left: 40px;
+  padding: 2px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 720px) {
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */

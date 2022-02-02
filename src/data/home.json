@@ -1,0 +1,22 @@
+[
+    
+  {
+    "id": 1,
+    "tittle": "NAPRAWA POJAZDÓW",
+    "img": "zdjecie",
+    "description": "Mechanika ogólna - naprawy układów hamulcowych, chłodniczych, zawieszenia, układy napędowe, remonty silników, wymiany układów rozrządu, filtrów i wiele innych. Elektryka - naprawy alternatorów, rozruszników, układów klimatyzacji, oświetlenia, centralnych zamków itp, układy abs Diagnostyka samochodów"
+  },
+  { 
+  "id": 2,
+    "tittle": "SERWIS KLIMATYZACJI",
+    "img": "zdjecie",
+    "description": "Nie masz czasu na dojazd do warsztatu? My dojedziemy do Ciebie. Zadzwoń i umów się na dogodny dla Ciebie termin, przyjedziemy napełnimy układ, sprawdzimy poprawność działania, przeprowadzimy dezynfekcję wnętrza pojazdu. (konieczny dostęp do sieci elektroenergetycznej o napięciu 230 V)."
+  },
+  { 
+    "id": 3,
+      "tittle": "SZKOLENIA F-GAZ",
+      "img": "zdjecie",
+      "description": "Jako jedyna jednostka w Przemyślu i jedna z nielicznych w rejonie prowadzę szkolenia spełniające wymagania zawarte w ustawie z dnia 25 czerwca 2015 r. Poz. 881 Ustawa z dnia 15 maja 2015 r. o substancjach zubożających warstwę ozonową oraz o niektórych fluorowanych gazach cieplarnianych. Zgodnie z ustawą każdy, kto chce zajmować się klimatyzacją samochodową musi odbyć szkolenie i posiadać zaświadczenie uprawniające do zakupu czynnika, prowadzenia odzysku i napełniania układów klimatyzacji w samochodach osobowych."
+    }
+
+]

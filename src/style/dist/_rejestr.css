@@ -1,0 +1,23 @@
+.rejestr {
+  max-width: 60%;
+  margin: 20px auto;
+}
+.rejestr p {
+  margin: 30px auto;
+}
+.rejestr table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+.rejestr table thead, .rejestr table tbody, .rejestr table th, .rejestr table td {
+  border: 1px solid black;
+}
+.rejestr table th {
+  border-width: 2px;
+}
+
+@media (max-width: 720px) {
+  .rejestr {
+    max-width: 80%;
+  }
+}
