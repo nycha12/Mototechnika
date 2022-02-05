@@ -4,9 +4,11 @@ const Article = (props) => {
 	return (
 		<>
 			<section className="art">
-				<div className="foto"> zdjecie</div>
+				<div className="photo">
+					<img src={props.data.img} alt="Naprawa Pojazdów" />
+				</div>
 				<div className="art">
-					<h2>{props.data.tittle}</h2>
+					<h2>{props.data.title}</h2>
 					<p>{props.data.description}</p>
 				</div>
 			</section>

@@ -1,4 +1,7 @@
 import React from "react";
+
+import Contact from "../Components/Contact";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -35,13 +38,16 @@ const Footer = () => {
 					<span>
 						<a
 							rel="noopener noreferrer"
-							href="mototechnika@autonaprawa-przemysl.pl"
+							href="mailto:mototechnika@autonaprawa-przemysl.pl"
 							target="_blank"
 						>
 							<FontAwesomeIcon icon={faEnvelope} />
 						</a>
 					</span>
 				</div>
+				{/* <div className="contact">
+					<Contact />
+				</div> */}
 				<p>
 					Całość prezentowanej strony internetowej stanowi własność Grzegorza
 					Góral i jest utworem w rozumieniu ustawy z dnia 4 lutego 1994 r. o

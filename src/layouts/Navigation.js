@@ -20,10 +20,10 @@ const Navigation = () => {
 			home: "rejestr",
 			name: "Rejestr zaświadczeń",
 		},
-		// {
-		// 	home: "mototechnika",
-		// 	name: "Mototechnika",
-		// },
+		{
+			home: "youtube",
+			name: "YouTube",
+		},
 		{
 			home: "kontakt",
 			name: "Kontakt",
@@ -48,15 +48,17 @@ const Navigation = () => {
 
 	return (
 		<>
-			<nav className="mainNav">
-				<img src={logo} alt="Logo" />
-				<span className="burgerActive" onClick={handleShowNav}>
-					<FontAwesomeIcon icon={faBars} />
-				</span>
-				<ul className={showNav} onClick={handleShowNav}>
-					{navs}
-				</ul>
-			</nav>
+			<div className="navigation">
+				<nav className="mainNav">
+					<img src={logo} alt="Logo" />
+					<span className="burgerActive" onClick={handleShowNav}>
+						<FontAwesomeIcon icon={faBars} />
+					</span>
+					<ul className={showNav} onClick={handleShowNav}>
+						{navs}
+					</ul>
+				</nav>
+			</div>
 		</>
 	);
 };

@@ -10,25 +10,64 @@ h1 {
   font-size: 1.5em;
 }
 
+html {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+html body {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 header {
-  background-color: grey;
-  height: 40vh;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+header div {
+  height: 100%;
+  width: 100%;
+}
+header div.img1 {
+  display: block;
+  position: absolute;
+  background-image: url("../img/baner1.jpg");
+  background-size: cover;
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+}
+header div.img2 {
+  display: block;
+  position: absolute;
+  background-image: url("../img/baner2.jpg");
+  background-size: cover;
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+  animation: slider 10s linear infinite;
 }
 
 @keyframes slider {
   0% {
     opacity: 0;
   }
-  5% {
+  40% {
+    opacity: 0;
+  }
+  50% {
     opacity: 1;
   }
-  95% {
+  90% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
 }
+div.navigation {
+  background-color: white;
+}
+
 .mainNav {
   max-width: 1024px;
   height: 80px;
@@ -36,6 +75,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
 }
 .mainNav ul {
   display: flex;
@@ -94,6 +134,7 @@ span.burgerActive {
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
+    z-index: 9;
   }
   .mainNav .active {
     left: 30px;
@@ -111,8 +152,13 @@ span.burgerActive {
   display: flex;
   color: #333;
 }
+#home section div img:nth-child(1) {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
 
-div.foto, div.art {
+div.photo, div.art {
   flex-basis: 50%;
   margin: 20px;
 }
@@ -128,7 +174,7 @@ p {
   line-height: 1.3em;
 }
 
-div section:nth-child(odd) div.foto {
+div section:nth-child(odd) div.photo {
   order: 1;
 }
 
@@ -142,7 +188,7 @@ main {
   margin: 0 auto;
 }
 
-div.omnie {
+div.photo {
   max-width: 70%;
   margin: 20px auto;
 }
@@ -162,6 +208,10 @@ p {
 footer {
   background-color: #ddd;
   padding: 20px;
+  position: relative;
+}
+footer h2 {
+  font-size: 0.7em;
 }
 footer div {
   text-align: center;
@@ -182,6 +232,18 @@ footer p {
   margin: 20px auto;
   text-align: center;
   font-size: 13px;
+}
+footer .contact {
+  position: absolute;
+  width: 250px;
+  right: 20%;
+  top: 10px;
+}
+footer .contact h2 {
+  font-size: 0.5em;
+}
+footer .contact p {
+  line-height: 1px;
 }
 
 @media (max-width: 720px) {
@@ -223,14 +285,25 @@ footer p {
 .kontakt section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .kontakt section iframe {
   flex-basis: 50%;
   min-height: 40vh;
+  border: 0;
 }
 .kontakt p {
   text-align: center;
   padding: 0 20px 0 20px;
+}
+.kontakt p a {
+  text-decoration: none;
+  color: #666;
+  transition: 0.2s;
+}
+.kontakt p a:hover {
+  color: #000;
+  font-weight: 600;
 }
 
 @media (max-width: 720px) {
@@ -240,6 +313,42 @@ footer p {
   .kontakt section iframe {
     display: block;
     min-width: 80%;
+    margin: 0 auto;
+  }
+}
+form {
+  width: 400px;
+}
+form label {
+  display: block;
+}
+form label input {
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  width: 80%;
+}
+form label textarea {
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  width: 80%;
+  min-height: 20vh;
+}
+form #mail {
+  display: inline;
+  width: 30%;
+  margin-left: 35px;
+}
+form button {
+  margin-left: 40px;
+  padding: 2px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 720px) {
+  form {
+    width: 300px;
     margin: 0 auto;
   }
 }

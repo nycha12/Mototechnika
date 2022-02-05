@@ -8,8 +8,12 @@
     section
         display: flex
         color: $homeTextColor
+        div img:nth-child(1)
+           display: block
+           margin:0 auto
+           max-width: 100%
 
-div.foto, div.art
+div.photo, div.art
     flex-basis: 50%
     margin: 20px
 h2
@@ -19,8 +23,9 @@ p
     font-size: 1.4em
     text-align: justify
     line-height: 1.3em
-div section:nth-child(odd) div.foto
+div section:nth-child(odd) div.photo
     order: 1
+
 
 @media ( max-width: 720px )
     #home section

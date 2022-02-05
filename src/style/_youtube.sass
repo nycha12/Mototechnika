@@ -1,0 +1,38 @@
+.youtube
+    max-width: 70%
+    margin: 20px auto
+    h1
+        margin: 10px
+    a
+        text-transform: uppercase
+        text-decoration: none
+        color: $youtubeTextColor
+        &:hover
+            color: $youtubeHoverColor
+            font-weight: 600
+.movies
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    div
+       flex-basis: 45%
+       margin:10px
+      
+    
+    iframe
+        display: block
+        width: 100%
+        min-height: 300px
+        max-height: 50vh
+        border:0
+        
+
+        
+            
+        
+
+@media ( max-width: 720px  )
+    .movies
+        display: block     
+        div
+        margin:10px

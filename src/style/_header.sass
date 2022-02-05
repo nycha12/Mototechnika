@@ -1,13 +1,39 @@
 header
-    background-color: $headerBackgroundColor
-    height: 40vh
+    height: 60vh
+    position: relative
+    overflow: hidden
 
+    div
+        height: 100%
+        width: 100%
+        &.img1
+            display: block
+            position: absolute
+            background-image: url("../img/baner1.jpg")
+            background-size: cover
+            background-position-y:-20px 
+            background-repeat: no-repeat
+             
+            
+        &.img2
+            display: block
+            position: absolute
+            background-image: url("../img/baner2.jpg")
+            background-size: cover
+            background-position-y:-20px 
+            background-repeat: no-repeat
+            animation: slider 10s linear infinite
+            
 @keyframes slider
     0%
+        opacity:0
+    40%
         opacity: 0
-    5%
+    50%
         opacity: 1
-    95%
+    90%
         opacity: 1
     100%
         opacity: 0
+
+     

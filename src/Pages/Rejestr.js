@@ -1,19 +1,29 @@
 import rejData from "../data/rejestr.json";
 
 const Rejestr = () => {
-	const datastSort = rejData.sort((a, b) => {
-		const tmpA = a.number.toLowerCase();
-		const tmpB = b.number.toLowerCase();
+	// const datastSort = rejData.sort((a, b) => {
+	// 	let c = a.date;
+	// 	let d = b.date;
 
-		if (tmpA > tmpB) {
-			return 1;
-		} else if (tmpA < tmpB) {
-			return -1;
-		} else {
-			return 0;
-		}
-	});
-	const datas = datastSort.map((data) => (
+	// 	c = c.split("").reverse().join("");
+	// 	d = d.split("").reverse().join("");
+	// 	console.log(c);
+	// 	// c = c.replace("/", "").replace("/", "");
+	// 	// d = d.replace("/", "").replace("/", "");
+
+	// 	// console.log(c);
+	// 	const tmpA = c.toLowerCase();
+	// 	const tmpB = d.toLowerCase();
+
+	// 	if (tmpA > tmpB) {
+	// 		return 1;
+	// 	} else if (tmpA < tmpB) {
+	// 		return -1;
+	// 	} else {
+	// 		return 0;
+	// 	}
+	// });
+	const datas = rejData.map((data) => (
 		<tr key={data.name}>
 			<td>{data.date}</td>
 			<td>{data.name}</td>
