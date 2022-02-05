@@ -371,6 +371,10 @@ form button {
     margin: 0 auto;
   }
 }
+main {
+  overflow: hidden;
+}
+
 .youtube {
   max-width: 70%;
   margin: 20px auto;
@@ -396,6 +400,14 @@ form button {
 .movies div {
   flex-basis: 45%;
   margin: 10px;
+  position: relative;
+  transition: 2s;
+}
+.movies div:nth-child(odd) {
+  left: -100%;
+}
+.movies div:nth-child(even) {
+  left: 100%;
 }
 .movies iframe {
   display: block;
@@ -405,9 +417,17 @@ form button {
   border: 0;
 }
 
+div:nth-child(odd).active {
+  left: 0;
+}
+
+div:nth-child(even).active {
+  left: 0;
+}
+
 @media (max-width: 720px) {
   .movies {
     display: block;
-    margin: 10px;
+    margin: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

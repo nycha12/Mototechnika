@@ -3,7 +3,7 @@ const ShowMovies = () => {
 	return (
 		<div className="movies">
 			{movies.map((movie) => (
-				<div key={movie.id}>
+				<div key={movie.id} className="movie">
 					<iframe
 						src={movie.address}
 						title="YouTube video player"
