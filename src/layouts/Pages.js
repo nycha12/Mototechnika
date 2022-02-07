@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home";
 import Kontakt from "../Pages/Kontakt";
@@ -5,7 +7,13 @@ import AboutMe from "../Pages/AboutMe";
 import Rejestr from "../Pages/Rejestr";
 import Mototechnika from "../Pages/Mototechnika";
 import Youtube from "../Pages/Youtube";
+import Cookies from "../Components/Coockies";
 const Pages = () => {
+	const [acceptCookies, setAcceptCookies] = useState(true);
+	const handleAcceptCookies = () => {
+		setAcceptCookies(false);
+	};
+
 	return (
 		<>
 			<main>
@@ -17,6 +25,7 @@ const Pages = () => {
 					<Route path="/rejestr" element={<Rejestr />} />
 					<Route path="/youtube" element={<Youtube />} />
 				</Routes>
+				{acceptCookies && <Cookies handleAcceptCookies={handleAcceptCookies} />}
 			</main>
 		</>
 	);

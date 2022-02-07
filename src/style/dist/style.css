@@ -352,3 +352,71 @@ form button {
     margin: 0 auto;
   }
 }
+main {
+  overflow: hidden;
+}
+
+.youtube {
+  max-width: 70%;
+  margin: 20px auto;
+}
+.youtube h1 {
+  margin: 10px;
+}
+.youtube a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #666;
+}
+.youtube a:hover {
+  color: #000;
+  font-weight: 600;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.movies div {
+  flex-basis: 45%;
+  margin: 10px;
+  position: relative;
+  transition: 2s;
+}
+.movies div:nth-child(odd) {
+  left: -100%;
+}
+.movies div:nth-child(even) {
+  left: 100%;
+}
+.movies iframe {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  max-height: 50vh;
+  border: 0;
+}
+
+div:nth-child(odd).active {
+  left: 0;
+}
+
+div:nth-child(even).active {
+  left: 0;
+}
+
+@media (max-width: 720px) {
+  .movies {
+    display: block;
+    margin: 20px;
+  }
+}
+.cookies {
+  background-clip: white;
+  position: fixed;
+  width: 80%;
+}
+.cookies button {
+  background-color: #white;
+}

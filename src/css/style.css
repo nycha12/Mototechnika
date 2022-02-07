@@ -205,6 +205,7 @@ div section:nth-child(odd) div.photo {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 div.photo {
@@ -429,5 +430,39 @@ div:nth-child(even).active {
   .movies {
     display: block;
     margin: 20px;
+  }
+}
+.cookies {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid black;
+  font-size: 0.7em;
+}
+.cookies p {
+  padding: 20px;
+}
+.cookies button {
+  color: white;
+  display: block;
+  background-color: black;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.cookies button:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 720px) {
+  .cookies {
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
