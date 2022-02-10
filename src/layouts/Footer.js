@@ -1,7 +1,5 @@
 import React from "react";
 
-import Contact from "../Components/Contact";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 import {

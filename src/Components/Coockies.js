@@ -1,4 +1,3 @@
-import { useState } from "react";
 const Cookies = ({ handleAcceptCookies }) => {
 	return (
 		<div className="cookies">
