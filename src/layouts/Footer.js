@@ -6,6 +6,7 @@ import {
 	faFacebookSquare,
 	faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	<FontAwesomeIcon icon={faHome} />;
@@ -54,6 +55,11 @@ const Footer = () => {
 					sposób (elektroniczny, mechaniczny lub inny) bez pisemnej zgody
 					właściciela
 				</p>
+				<div>
+					<Link to="/blog">
+						<img className="footer-logo" src="/img/vstrom.png" alt="logo" />
+					</Link>
+				</div>
 			</footer>
 		</>
 	);

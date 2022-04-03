@@ -1,0 +1,10 @@
+.blog {
+  background-color: #333333;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #CC6601;
+}
+
+.blog__wrap {
+  display: flex;
+}
