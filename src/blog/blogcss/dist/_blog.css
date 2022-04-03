@@ -8,3 +8,21 @@
 .blog__wrap {
   display: flex;
 }
+
+.menu {
+  flex-basis: 20%;
+}
+
+.header {
+  height: 50vh;
+  min-height: 500px;
+  margin: 0 auto;
+  background-image: url(../img/bike.jpg);
+  background-size: cover;
+}
+
+.header-title {
+  padding: 30px;
+  color: white;
+  font-style: italic;
+}

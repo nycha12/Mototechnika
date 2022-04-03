@@ -504,9 +504,24 @@ div:nth-child(even).active {
   width: 800px;
 }
 
-.header {
+.blog {
+  background-color: #333333;
   max-width: 1000px;
+  margin: 0 auto;
+  color: #CC6601;
+}
+
+.blog__wrap {
+  display: flex;
+}
+
+.menu {
+  flex-basis: 20%;
+}
+
+.header {
   height: 50vh;
+  min-height: 500px;
   margin: 0 auto;
   background-image: url(../img/bike.jpg);
   background-size: cover;
@@ -516,8 +531,4 @@ div:nth-child(even).active {
   padding: 30px;
   color: white;
   font-style: italic;
-}
-
-.blog {
-  max-width: 1000px;
 }
