@@ -13,6 +13,10 @@ const Navigation = () => {
 			name: "Strona główna",
 		},
 		{
+			home: "aktualnosci",
+			name: "Aktualności",
+		},
+		{
 			home: "omnie",
 			name: "O mnie",
 		},

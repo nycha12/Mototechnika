@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import movies from "../data/movies.json";
 import youtube from "../data/youtube.json";
 import ShowMovies from "../Components/ShowMovies";
 
@@ -43,7 +44,7 @@ const Youtube = () => {
 					</p>
 				</div>
 			))}
-			<ShowMovies />
+			<ShowMovies movies={movies} />
 		</>
 	);
 };

@@ -1,0 +1,55 @@
+[
+	{
+		"title": "Chrysler Voyager 2.5 CRD nierównomierna praca silnika, kopcenie na 'siwo'",
+		"date": "3.04.2022 r.",
+		"description": "Samochód trafił do mnie, na oględziny. Jazda testowa ukazała szereg problemów, z których najważniejsze to: ",
+		"faults": [
+			"nierównomierna praca silnika na biegu jałowym,",
+			"siwy dym wydobywający się z wydechu(zarówno na biegu jałowym, jak i pod obciążeniem",
+			"ślizgające się sprzęgło",
+			"luzy w zawieszeniu"
+		],
+		"diagnostic": "Podpięcie narzędzi diagnostycznych niestety nie pokazało, żadnych problemów. Sprawdzenie EGR i przepływomierza powietrza nie wykazało nieprawidłowości, dlatego postanowiłem wyjąć wtryskiwacze i dać do sprawdzenia. Na stole probierczym okazało się, że wszystkie wtryskiwacze są uszkodzone. Dwie sztuki były nieszczelne na końcówkach wtrysków, a pozostałe dwie przekraczały dopuszczalne dawki wtrysków. Widać to doskonale na poniższych protokołach. Po uzgodnieniu z klientem, zamówiłem 'nowe' używane wtryski. Ponieważ używane części to zawsze loteria, przed montażem postanowiłem sprawdzić ich stan na stole probierczym. Niestety moje obawy okazały się słuszne. Trzy z czterech nie nadawały się do montażu. Współnie z klientem postanowiliśmy zamówić wtryskiwacze regenerowane. Tym razem obeszło się bez problemów i już 2 dni później wtryskiwacze były w samochodzie. Efekt naprawy można obejrzeć na filmie poniżej. Silnik pracuje równo, nie dymi. Reszta usterek była prosta w naprawie. Zużyte sprzęgło zostało wymienione na nowe, a stuki zawieszenia zniknęły po wymianie końcówek drążków, tulejek wahacza i łączników stabilizatora przedniej osi.  ",
+
+		"movies": [
+			{
+				"id": "1",
+				"address": "https://www.youtube.com/embed/UfrUga7JqtY"
+			}
+		],
+		"pictures": [
+			{
+				"name": "Wtryskiwacz 1",
+				"address": "/img/wtrysk1.jpg"
+			},
+			{
+				"name": "Wtryskiwacz 2",
+				"address": "/img/wtrysk2.jpg"
+			},
+			{
+				"name": "Wtryskiwacz 3",
+				"address": "/img/wtrysk3.jpg"
+			},
+			{
+				"name": "Wtryskiwacz 4",
+				"address": "/img/wtrysk4.jpg"
+			},
+			{
+				"name": "Wtryskiwacz używany 1",
+				"address": "/img/nowy1.jpg"
+			},
+			{
+				"name": "Wtryskiwacz używany 2",
+				"address": "/img/nowy2.jpg"
+			},
+			{
+				"name": "Wtryskiwacz używany 3",
+				"address": "/img/nowy3.jpg"
+			},
+			{
+				"name": "Wtryskiwacz używany 4",
+				"address": "/img/nowy4.jpg"
+			}
+		]
+	}
+]
