@@ -247,6 +247,13 @@ footer .contact p {
   line-height: 1px;
 }
 
+.footer-logo {
+  width: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 @media (max-width: 720px) {
   footer p {
     width: 80%;
@@ -410,6 +417,8 @@ div:nth-child(even).active {
 @media (max-width: 720px) {
   .movies {
     display: block;
+  }
+  .movies div {
     margin: 20px;
   }
 }
@@ -446,4 +455,80 @@ div:nth-child(even).active {
   .cookies {
     width: 80%;
   }
+}
+.news .article {
+  max-width: 800px;
+  margin: 10px auto;
+  background-color: #EDF7ED;
+}
+.news .article .movie {
+  position: static;
+}
+
+.article__date {
+  font-size: 18px;
+}
+
+.article__title, .article__description {
+  margin: 10px auto;
+  padding: 25px;
+}
+
+.article__title {
+  font-size: 20px;
+}
+
+.article__description {
+  font-size: 16px;
+}
+
+.article__faults-list {
+  max-width: 80%;
+  margin-left: 40px;
+}
+
+.article__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.article__picture {
+  width: 350px;
+  margin: 10px;
+}
+
+.article__picture--active-picture {
+  position: absolute;
+  width: 800px;
+}
+
+.blog {
+  background-color: #333333;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #CC6601;
+}
+
+.blog__wrap {
+  display: flex;
+}
+
+.menu {
+  flex-basis: 20%;
+}
+
+.header {
+  height: 50vh;
+  min-height: 500px;
+  margin: 0 auto;
+  background-image: url(../img/bike.jpg);
+  background-size: cover;
+}
+
+.header-title {
+  padding: 30px;
+  color: white;
+  font-style: italic;
 }

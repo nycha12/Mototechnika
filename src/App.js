@@ -1,22 +1,17 @@
-// import React, { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-
-import Header from "./layouts/Header";
-import Navigation from "./layouts/Navigation";
-import Pages from "./layouts/Pages";
-
-import Footer from "./layouts/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./css/style.css";
+import Autonaprawa from "./layouts/Autonaprawa";
+import Blog from "./blog/Blog";
 
 const App = () => {
 	return (
 		<>
 			<Router>
-				<Navigation />
-				<Header />
-				<Pages />
-				<Footer />
+				<Routes>
+					<Route path="/*" element={<Autonaprawa />} />
+					<Route path="/blog" element={<Blog />} />
+				</Routes>
 			</Router>
 		</>
 	);
