@@ -1,0 +1,47 @@
+.news .article {
+  max-width: 800px;
+  margin: 10px auto;
+  background-color: #EDF7ED;
+}
+.news .article .movie {
+  position: static;
+}
+
+.article__date {
+  font-size: 18px;
+}
+
+.article__title, .article__description {
+  margin: 10px auto;
+  padding: 25px;
+}
+
+.article__title {
+  font-size: 20px;
+}
+
+.article__description {
+  font-size: 16px;
+}
+
+.article__faults-list {
+  max-width: 80%;
+  margin-left: 40px;
+}
+
+.article__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.article__picture {
+  width: 350px;
+  margin: 10px;
+}
+
+.article__picture--active-picture {
+  position: absolute;
+  width: 800px;
+}

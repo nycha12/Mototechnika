@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home";
+import News from "../Pages/News";
 import Kontakt from "../Pages/Kontakt";
 import AboutMe from "../Pages/AboutMe";
 import Rejestr from "../Pages/Rejestr";
@@ -19,6 +20,7 @@ const Pages = () => {
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/aktualnosci" element={<News />} />
 					<Route path="/kontakt" element={<Kontakt />} />
 					<Route path="/omnie" element={<AboutMe />} />
 					<Route path="/mototechnika" element={<Mototechnika />} />

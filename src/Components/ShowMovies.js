@@ -1,5 +1,4 @@
-import movies from "../data/movies.json";
-const ShowMovies = () => {
+const ShowMovies = ({ movies }) => {
 	return (
 		<div className="movies">
 			{movies.map((movie) => (
