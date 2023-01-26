@@ -110,7 +110,7 @@ span.burgerActive {
   display: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 835px) {
   span.burgerActive {
     display: block;
     position: absolute;
