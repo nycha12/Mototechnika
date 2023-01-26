@@ -9,7 +9,6 @@
 		"name": "Kamil Hryń",
 		"number": "002/07/2019"
 	},
-
 	{
 		"date": "07/2019",
 		"name": "Damian Warzocha",
@@ -231,5 +230,5 @@
 		"date": "12/2022",
 		"name": "Emil Kaczmarz",
 		"number": "013/12/2022"
-	},
+	}
 ]
