@@ -230,5 +230,20 @@
 		"date": "12/2022",
 		"name": "Emil Kaczmarz",
 		"number": "013/12/2022"
+	},
+	{
+		"date": "06/2022",
+		"name": "Grzegorz Lekki",
+		"number": "001/06/2023"
+	},
+	{
+		"date": "06/2023",
+		"name": "Maciej Nowak",
+		"number": "002/06/2023"
+	},
+	{
+		"date": "09/2023",
+		"name": "Michał Zub",
+		"number": "003/06/2023"
 	}
 ]
